@@ -1,0 +1,114 @@
+1-
+
+let n1 = Number(prompt("Digite um número inteiro"));
+
+if (n1 % 2 == 1){
+    console.log("O número inserido é ímpar")
+}
+else{
+    console.log("O número inserido é par")
+}
+
+2-
+
+let ano = Number(prompt("Digite um ano"));
+
+if (ano % 4 == 0){
+    console.log(`O ano inserido ${ano} é bissexto`)
+}
+else{
+    console.log(`O ano inserido ${ano} não é bissexto`)
+}
+
+3-
+
+let ano = Number(prompt("Digite o ano: "));
+let seculo = Math.floor(ano/100);
+if(seculo % 100 !=0){
+ let resposta = (seculo + 1);
+ console.log(`O século correspondente ao ${ano} é: ${resposta}`);
+}
+
+4-
+
+alert("O número ao lado do x² é chamado de A, o número ao lado
+do x é chamado de B e o número isolado é chamado de C");
+let a = Number(prompt("Digite um valor para A"));
+let b = Number(prompt("Digite um valor para B"));
+let c = Number(prompt("Digite um valor para C"));
+let d = (b**2)-(4*a*c);
+let e = (-b+Math.sqrt(d))/2*a;
+let f = (-b-Math.sqrt(d))/2*a;
+let g = -b/(2*a);
+if(d>0){
+document.write(Os valores de x são iguais a ${parseInt(e)}
+e ${parseInt(f)});
+}
+else if(d==0){
+document.write(O valor de x é igual a ${parseInt(g)});
+}
+else{
+document.write("A equação não pode ser resolvida");
+}
+
+5-
+
+let l1 = Number(prompt("Digite um valor para o lado 1"));
+let l2 = Number(prompt("Digite um valor para o lado 2"));
+let l3 = Number(prompt("Digite um valor para o lado 3"));
+if(l1<l2+l3  l2<l1+l3  l3<l2+l1){
+if(l1==l2 && l2==l3){
+document.write("O triângulo é equilátero.");
+}
+else if(l1==l2  l2==l3  l1==l3){
+document.write("O triângulo é isóceles.");
+}
+else{
+document.write("O triângulo é escaleno.");
+}
+}
+else{
+document.write("Não forma um triângulo.");
+}
+
+6-
+
+let x = Number(prompt("Digite o ponto x do centro: "));
+let r = Number(prompt("Digite o valor do raio: "));
+let y = Number(prompt("Digite o ponto y do centro: "));
+let x1 = Number(prompt("Digite o ponto x do ponto: "));
+let y1 = Number(prompt("Digite o ponto y do ponto: "));
+let d = (x1-x)**2;
+let d2 = (y1-y)**2;
+let d3 = (d+d2);
+let d4 = d3**0.5
+if(d4>r){
+document.write("O ponto inserido não faz parte do circulo.");
+}
+else{
+document.write("O ponto inserido faz parte do circulo.")
+}
+
+7-
+
+let peso = Number(prompt("Digite o seu peso: "));
+let altura = Number(prompt("Digite a sua altura: "));
+let imc = peso/(altura**2);
+if(imc<=18.5){
+document.write("Você está abaixo do peso.");
+}
+else if(imc>18.5 && imc<=24.9){
+document.write("Você está com o peso normal.");
+}
+else if(imc>25 && imc<=29.9){
+document.write("Você está acima do peso.");
+}
+else if(imc>30 && imc<=34.9){
+document.write("Você está com obesidade nivel 1.");
+}
+else if(imc>35 && imc<=39.9){
+document.write("Você está com obesidade nivel 2.");
+}
+else if(imc>=40){
+document.write("Você está com obesidade nivel 3.");
+}
